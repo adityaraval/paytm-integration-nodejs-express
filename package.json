@@ -1,0 +1,21 @@
+{
+  "name": "paytm-integration",
+  "version": "1.0.0",
+  "description": "Paytm Integration",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "author": "Aditya Raval",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "needle": "^2.2.1",
+    "shortid": "^2.2.10"
+  }
+}

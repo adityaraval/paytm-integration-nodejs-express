@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Check Out Page</title>
+</head>
+<body>
+<center><h1>Please do not refresh this page...</h1></center>
+
+<form method="post" action='<%= paytmFinalUrl %>' name="f1">
+    <table border="1">
+        <tbody>
+        <% for (name in resultData) {
+        %>
+        <input type="hidden" name='<%= name %>' value='<%= resultData[name] %>'>
+
+        <%
+        }
+        %>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+      document.f1.submit();
+    </script>
+</form>
+</body>
+</html>
