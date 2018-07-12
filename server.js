@@ -17,8 +17,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/views"));
 app.set("view engine", "ejs");
 
-app.post("/paywithpaytm", (req, res) => {
-    initPayment(req.body.amount).then(
+app.get("/paywithpaytm", (req, res) => {
+    initPayment(req.query.amount).then(
         success => {
             res.render("paytmRedirect.ejs", {
                 resultData: success,
