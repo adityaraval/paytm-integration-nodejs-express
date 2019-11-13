@@ -3,8 +3,6 @@
 var crypto = require('crypto');
 var util = require('util');
 
-//var config = require('./pg').paytmnew;
-
 var crypt = {
   iv: '@@@@&&&&####$$$$',
 
